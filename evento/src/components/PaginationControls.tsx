@@ -24,10 +24,12 @@ export default function PaginationControls({
         <div></div>
       )}
 
-      <Link href={nextPath} className={btnStyles}>
-        Next
-        <ArrowRightIcon />
-      </Link>
+      {nextPath && (
+        <Link href={nextPath} className={btnStyles}>
+          Next
+          <ArrowRightIcon />
+        </Link>
+      )}
     </section>
   );
 }
